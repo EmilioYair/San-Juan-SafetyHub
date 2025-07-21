@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas - San Juan Safety Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-placeholder"><img src="../components/LOGO.svg" alt="San Juan Safety Hub Logo" class="logo-img"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Notificaciones.html">Notificaciones</a></li>
+                    <li><a href="Mapa.html">Map</a></li>
+                    <li><a href="Noticias.html">News</a></li>
+                    <li><a href="Encuestas.html">Encuestas</a></li>
+                    <li><a href="Registo.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Encuestas de Seguridad</h1>
+                <p class="subtitle">Su opinión es importante para mejorar la seguridad en San Juan del Río. Participe en nuestras encuestas y ayúdenos a crear un entorno más seguro para todos.</p>
+            </div>
+        </section>
+
+        <section class="surveys">
+            <div class="container">
+                <h2 class="section-title">Encuestas Disponibles</h2>
+                <div class="survey-cards">
+                    <div class="survey-card">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <h4>Percepción de Seguridad por Zona</h4>
+                        </div>
+                        <p>Ayúdenos a entender cómo se siente la comunidad respecto a la seguridad en diferentes zonas de San Juan del Río.</p>
+                        <div class="survey-info">
+                            <span class="duration">⏱️ 5 minutos</span>
+                            <span class="responses">👥 324 respuestas</span>
+                        </div>
+                        <a href="#survey1" class="btn-secondary">Participar</a>
+                    </div>
+
+                    <div class="survey-card">
+                        <div class="card-header">
+                            <span class="card-icon">🚨</span>
+                            <h4>Efectividad de las Alertas</h4>
+                        </div>
+                        <p>Evalúe qué tan útiles y oportunas son las alertas de emergencia que recibe a través de nuestro sistema.</p>
+                        <div class="survey-info">
+                            <span class="duration">⏱️ 3 minutos</span>
+                            <span class="responses">👥 189 respuestas</span>
+                        </div>
+                        <a href="#survey2" class="btn-secondary">Participar</a>
+                    </div>
+
+                    <div class="survey-card">
+                        <div class="card-header">
+                            <span class="card-icon">🏘️</span>
+                            <h4>Seguridad Comunitaria</h4>
+                        </div>
+                        <p>Comparta sus experiencias sobre la seguridad en su colonia y sugiera mejoras para la comunidad.</p>
+                        <div class="survey-info">
+                            <span class="duration">⏱️ 7 minutos</span>
+                            <span class="responses">👥 156 respuestas</span>
+                        </div>
+                        <a href="#survey3" class="btn-secondary">Participar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="survey1" class="survey-form">
+            <div class="container">
+                <h2 class="section-title">Percepción de Seguridad por Zona</h2>
+                <form class="survey-container">
+                    <div class="form-group">
+                        <label for="zona">¿En qué zona de San Juan del Río vive?</label>
+                        <select id="zona" name="zona" required>
+                            <option value="">Seleccione una zona</option>
+                            <option value="centro">Centro</option>
+                            <option value="norte">Zona Norte</option>
+                            <option value="sur">Zona Sur</option>
+                            <option value="oriente">Zona Oriente</option>
+                            <option value="poniente">Zona Poniente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué tan seguro se siente en su zona durante el día?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="seguridad_dia" value="muy_seguro"> Muy seguro</label>
+                            <label><input type="radio" name="seguridad_dia" value="seguro"> Seguro</label>
+                            <label><input type="radio" name="seguridad_dia" value="neutral"> Neutral</label>
+                            <label><input type="radio" name="seguridad_dia" value="inseguro"> Inseguro</label>
+                            <label><input type="radio" name="seguridad_dia" value="muy_inseguro"> Muy inseguro</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué tan seguro se siente en su zona durante la noche?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="seguridad_noche" value="muy_seguro"> Muy seguro</label>
+                            <label><input type="radio" name="seguridad_noche" value="seguro"> Seguro</label>
+                            <label><input type="radio" name="seguridad_noche" value="neutral"> Neutral</label>
+                            <label><input type="radio" name="seguridad_noche" value="inseguro"> Inseguro</label>
+                            <label><input type="radio" name="seguridad_noche" value="muy_inseguro"> Muy inseguro</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuáles considera que son los principales problemas de seguridad en su zona? (Seleccione todas las que apliquen)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="problemas" value="robo"> Robo a transeúntes</label>
+                            <label><input type="checkbox" name="problemas" value="vehiculos"> Robo de vehículos</label>
+                            <label><input type="checkbox" name="problemas" value="casa_habitacion"> Robo a casa habitación</label>
+                            <label><input type="checkbox" name="problemas" value="violencia"> Violencia callejera</label>
+                            <label><input type="checkbox" name="problemas" value="drogas"> Venta de drogas</label>
+                            <label><input type="checkbox" name="problemas" value="iluminacion"> Falta de iluminación</label>
+                            <label><input type="checkbox" name="problemas" value="patrullaje"> Falta de patrullaje</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales (opcional)</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Comparta cualquier comentario o sugerencia adicional..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Encuesta</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="survey-results">
+            <div class="container">
+                <h2 class="section-title">Resultados Destacados</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">73%</div>
+                        <p>de los ciudadanos se sienten seguros durante el día</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">45%</div>
+                        <p>se sienten seguros durante la noche</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">Centro</div>
+                        <p>es considerada la zona más segura</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">Iluminación</div>
+                        <p>es el problema más reportado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4><span class="logo-placeholder">🛡️</span> San Juan Safety Hub</h4>
+                    <p>Monitoreando la seguridad de San Juan del Río. Tu fuente de información confiable para mantenerte seguro.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><a href="mailto:contacto.sjh@utsjr.edu.mx">contacto.sjh@utsjr.edu.mx</a></p>
+                    <p><a href="tel:+524271234567">+52 (427) 123 4567</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 UTSJR - Grupo DS01SM-24. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
